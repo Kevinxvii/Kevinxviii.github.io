@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mio sito personale</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <script type="text/javascript">
+        window.onload = function () {
+            if (sessionStorage.getItem('visits')) {
+                sessionStorage.setItem('visits', Number(sessionStorage.getItem('visits')) + 1);
+            } else {
+                sessionStorage.setItem('visits', 1);
+            }
+            document.getElementById('visits').innerHTML = "Numero di visualizzazioni: " + sessionStorage.getItem('visits');
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#presentation">La mia presentazione</a></li>
+                <li><a href="Contatti.html">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="presentation">
+            <h1>Benvenuto sul mio sito web!</h1>
+            <p>Mi chiamo Kevin e sono un programmatore alle prime armi. Sto al quarto anno di informatica all'ITT
+                Allievi San-Gallo e vivo a Terni, per chi non la conosce si trova in Umbria. Mi piace
+                lavorare su progetti creativi che mi permettono di esprimere la mia creatività e di utilizzare le mie
+                competenze tecniche
+            </p>
+        </section>
+        <section id="interests">
+            <h2>I miei interessi</h2>
+            <p>Mi piace anche molto programmare siti web e applicazioni, in particolare mi sto cimentando con lo
+                sviluppo di
+                applicazioni mobili per Android e iOS, e sto anche studiando attualmente Java. Adoro anche giocare a
+                calcio, soprattutto con gli amici del mio
+                quartiere. Inoltre, sono appassionato di fotografia e mi piace sperimentare con la fotografia
+                paesaggistica.</p>
+        </section>
+    </main>
+    <footer>
+        <p id="visits">Numero di visualizzazioni: 0</p>
+        <p>Grazie per essere stato a trovarmi sul mio sito!</p>
+    </footer>
+</body>
+
+</html>

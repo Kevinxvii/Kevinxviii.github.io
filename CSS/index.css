@@ -47,13 +47,18 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: black;
+  color: #0077cc;
 }
 
 /* Layout */
 header {
   background-color: #0077cc;
   padding: 1.5em 1em;
+}
+#visits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav ul {
@@ -70,6 +75,14 @@ nav a {
   color: #fff;
   font-weight: bold;
 }
+
+#projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 main {
   max-width: 960px;
@@ -118,3 +131,42 @@ footer {
     padding: 1.5em 1em;
   }
 }
+#dark-mode-btn {
+  background: white;
+  border-radius: 999px;
+  box-shadow: black 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+
+#dark-mode-btn:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  border-color: white;
+}
+
+#dark-mode-btn i {
+  margin-right: 8px;
+}
+
+body.dark-mode {
+  background-color: #222;
+  color: #0077cc;
+}
+

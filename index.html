@@ -70,11 +70,19 @@
             </ul>
         </section>
         <section id="stats">
-            <p>
-                questa pagina ha fatto
-            </p>
-            <span id="visits"></span>
-               <p id="visits"></p>
+<section>
+            <div class="container">
+                
+                <span class="visit-count" id="visits">  0 visite</span>
+            </div>
+
+            <script>
+                function cb(response) {
+                    document.getElementById('visits').innerText = 'questa pagina ha fatto ' + response.value + ' visite';
+                }
+            </script>
+            <script async src="https://api.countapi.xyz/hit/Kevinxviii.github.io/visits?callback=cb"></script>
+        </section>
     </main>
 </body>
 

@@ -1,0 +1,165 @@
+/* Impostazioni globali */
+* {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+}
+
+/* Contenitore principale */
+#container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Sfondo e altezza del corpo della pagina */
+body,
+html {
+  height: 100%;
+  background-color: none
+  ;
+}
+
+/* Titolo */
+.titolo {
+  color: black;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+h2,h3,p{
+  position: relative;
+  left: 50%;
+}
+
+.pnguno,.pngdue{
+  position: relative;
+  left: 50%;
+}
+/* Colonne principali */
+.colonna {
+  right: 30%;
+  font-size: 1.25rem;
+  width: 50%;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.colonna2 {
+  font-size: 1.25rem;
+  width: 50%;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Immagini */
+.pnguno,
+.pngdue {
+  width: 100%;
+  max-width: 200px;
+  padding: 1rem;
+  transition: transform 0.2s; /* Animazione */
+}
+
+.pnguno:hover,
+.pngdue:hover {
+  transform: scale(2.0);
+}
+
+/* Pulsante */
+#openButton{
+  position: relative;
+  top: 20%;
+  left: 140%;
+}
+button {
+  background: #4caf50;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 7px;
+  box-shadow: 0 7px 0px #388e3c;
+  display: inline-block;
+  transition: all 0.2s;
+  padding: 1rem 2.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  border: none;
+  
+}
+
+button:active {
+  top: 3px;
+  box-shadow: 0 2px 0px #388e3c;
+  transition: all 0.2s;
+}
+
+/* Layout adattivo */
+@media (max-width: 768px) {
+  .colonna,
+  .colonna2 {
+    width: 100%;
+    margin: 0 0 2rem 0;
+    padding: 0 1rem;
+  }
+
+  .pnguno,
+  .pngdue {
+    max-width: 100%;
+    padding: 0.5rem;
+  }
+
+  button {
+    padding: 1rem;
+    font-size: 1.25rem;
+  }
+}
+#dark-mode-btn {
+  position: fixed;
+  top: 50px;
+  right: 40px;
+  transform: translateY(-50%);
+  z-index: 9999; /* Assicura che il bottone sia in primo piano */
+  background: white;
+  border-radius: 999px;
+  box-shadow: black 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+/* Cambia il colore del bottone quando passi sopra con il mouse */
+#dark-mode-btn:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  border-color: white;
+}
+
+/* Aggiungi un'icona prima del testo */
+#dark-mode-btn i {
+  margin-right: 8px;
+}
+
+/* Imposta il colore di sfondo e il colore del testo in modalità dark */
+body.dark-mode {
+  background-color: #222;
+  color: #0077cc;
+}

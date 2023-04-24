@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+.container {
+  background-color: #f9f9f9;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+/* Stili di base */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+/* Stili per il contenitore principale */
+div {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Stili per la mappa Google */
+iframe {
+  display: block;
+  margin: 2rem 0;
+}
+
+/* Stili per il pulsante "clicca per ritornare indietro" */
+.button_slide {
+  position: absolute;
+  right: 43%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 0.2s ease-out;
+}
+
+.button_slide:hover {
+  transform: translateX(-5px);
+}
+
+.slide_left {
+  margin-right: 1rem;
+}
+
+/* Stili per il testo all'interno del contenitore principale */
+.text {
+  text-align: justify;
+}
+#dark-mode-btn {
+  position: fixed;
+  top: 50px;
+  right: 40px;
+  transform: translateY(-50%);
+  z-index: 9999; /* Assicura che il bottone sia in primo piano */
+  background: white;
+  border-radius: 999px;
+  box-shadow: black 0 10px 20px -10px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+}
+
+/* Cambia il colore del bottone quando passi sopra con il mouse */
+#dark-mode-btn:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  border-color: white;
+}
+
+/* Aggiungi un'icona prima del testo */
+#dark-mode-btn i {
+  margin-right: 8px;
+}
+
+/* Imposta il colore di sfondo e il colore del testo in modalità dark */
+body.dark-mode {
+  background-color: #222;
+  color: #0077cc;
+}

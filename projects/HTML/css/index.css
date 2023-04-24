@@ -1,0 +1,125 @@
+body {
+    padding: 1%;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    margin: 10px auto;
+    max-width: 1200px;
+}
+
+.left,
+.right,
+.center {
+    width: calc(33.33% - 20px);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.left {
+    background-color: tomato;
+}
+
+.right {
+    background-color: teal;
+}
+
+.center {
+    background-color: rgb(166, 71, 255);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    width: 33.33%;
+    float: left;
+    padding: 50px;
+    color: white;
+    display: inline-block;
+}
+
+.column::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.apri-bottone {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100px;
+    /* aggiungi questa proprietà per impostare la larghezza del bottone */
+    background-color: blue;
+    /* esempio di stile per il bottone */
+    color: white;
+    /* esempio di stile per il bottone */
+    text-align: center;
+    /* esempio di stile per il bottone */
+    padding: 10px;
+    /* esempio di stile per il bottone */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-basis: 33.33%;
+    padding: 50px;
+    color: white;
+}
+
+.apri-bottone {
+    margin: 0 auto;
+    display: block;
+    width: 100px;
+    /* aggiungi questa proprietà per impostare la larghezza del bottone */
+    background-color: blue;
+    /* esempio di stile per il bottone */
+    color: white;
+    /* esempio di stile per il bottone */
+    text-align: center;
+    /* esempio di stile per il bottone */
+    padding: 10px;
+    /* esempio di stile per il bottone */
+}
+
+button {
+    background-color: white;
+    color: black;
+    font-size: 1.3em;
+    font-weight: 600;
+    position: relative;
+    outline: none;
+    border-radius: 50px;
+    display: flex;
+    left: 35%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    height: 50px;
+    width: 100px;
+}

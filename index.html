@@ -7,25 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/index.css">
     <script src="darkmode.js"></script>
-    <script type="text/javascript">
-        window.onload = function () {
-            if (sessionStorage.getItem('visits')) {
-                sessionStorage.setItem('visits', Number(sessionStorage.getItem('visits')) + 1);
-            } else {
-                sessionStorage.setItem('visits', 1);
-            }
-            document.getElementById('visits').innerHTML = "Numero di visualizzazioni: " + sessionStorage.getItem('visits');
-        }
-
-        function toggleMenu() {
-            var menu = document.getElementById('menu');
-            if (menu.classList.contains('active')) {
-                menu.classList.remove('active');
-            } else {
-                menu.classList.add('active');
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -65,11 +46,11 @@
             <h2>I miei progetti</h2>
             <ul>
                 <li><a href="projects/calculator.html">Progetto 1</a></li>
-                <li><a href="#">Progetto 2</a></li>
+                <li><a href="projects/HTML/inizio.html">Progetto 2</a></li>
                 <li><a href="#">Progetto 3</a></li>
             </ul>
         </section>
-    <section>
+        <section>
             <div class="container">
                 
                 <span class="visit-count" id="visits">  0 visite</span>
@@ -82,6 +63,7 @@
             </script>
             <script async src="https://api.countapi.xyz/hit/Kevinxviii.github.io/visits?callback=cb"></script>
         </section>
+
     </main>
 </body>
 

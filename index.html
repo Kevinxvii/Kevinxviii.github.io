@@ -52,13 +52,13 @@
         </section>
         <section>
             <div class="container">
-                
-                <span class="visit-count" id="visits"> </span>
+                <h2>
+                    <span class="visit-count" id="visits"> </span>
+                </h2>
             </div>
-
             <script>
                 function cb(response) {
-                    document.getElementById('visits').innerText = 'questa pagina ha fatto ' + response.value + ' visite';
+                    document.getElementById('visits').innerText = 'Questa pagina ha fatto ' + response.value + ' visite';
                 }
             </script>
             <script async src="https://api.countapi.xyz/hit/Kevinxviii.github.io/visits?callback=cb"></script>
